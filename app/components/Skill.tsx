@@ -143,7 +143,7 @@ function Skill() {
                   <Image
                     src="/images/skills/ginlogo.png"
                     alt="Gin Framework"
-                    width={45}
+                    width={38}
                     height={40}
                   />
                   <p className="text-xs sm:text-sm whitespace-nowrap">Gin</p>
