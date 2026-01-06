@@ -62,19 +62,19 @@ function page() {
               experience for both patients and administrators.
             </p>
           </div>
-          <div className="space-y-4">
+          <div className="flex flex-col items-center justify-center space-y-6 mt-10">
             <div className="flex items-center justify-center  gap-2 bg-gradient-to-r bg-clip-text from-blue-600 to-sky-500 text-transparent">
               <Star className="text-amber-600" />
-              <p className=" font-bold text-xl sm:text-3xl text-amber-300">
+              <p className=" font-bold text-xl sm:text-4xl text-amber-300">
                 Key Features
               </p>
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <User className="" />
-              <p className=" font-bold text-xl sm:text-2xl">General Users</p>
+              <p className=" font-bold text-xl sm:text-3xl">General Users</p>
             </div>
-            <div className="space-y-2">
+
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>- Register / Login</p>
               <p>
                 - Book appointments (select service, date, time, doctor, upload
@@ -82,11 +82,17 @@ function page() {
               </p>
               <p>
                 - View service and doctor details, booking instructions, daily
-                doctor schedule, and slot technologies
+                doctor schedule, and slot status
               </p>
               <p>
                 - Profile page to manage personal info, appointment history,
                 LINE integration, and cancel appointment
+              </p>
+            </div>
+
+            <div className="flex items-center text-start gap-2 text-sky-500">
+              <p className=" font-bold text-xl sm:text-3xl">
+                Slot and Time Management
               </p>
             </div>
             <div className="flex justify-start my-6">
@@ -98,17 +104,10 @@ function page() {
                 className="rounded-lg shadow-lg max-w-full h-auto object-cover"
               />
             </div>
-
-            <div className="flex items-center text-start gap-2 text-sky-500">
-              <Clock className="" />
-              <p className=" font-bold text-xl sm:text-2xl">
-                Slot and Time Management
-              </p>
-            </div>
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>
-                - Booking page shows slot technologies with colors: Available,
-                Almost Full, Full, Closed
+                - Booking page shows slot status with colors: Available, Almost
+                Full, Full, Closed
               </p>
               <p>
                 - Each doctor&apos;s slot is 1 hour, allowing focused patient
@@ -119,40 +118,37 @@ function page() {
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <Calendar className="" />
-              <p className=" font-bold text-xl sm:text-2xl">
+              <p className=" font-bold text-xl sm:text-3xl">
                 Booking by Service Duration
               </p>
             </div>
-            <div className="space-y-2"></div>
-            <p>
-              {" "}
-              Example scenario: slot technologies: [08:00 Available] [09:00
-              Full] (from DB){" "}
-            </p>
-            <p>- Booking a 1-hour service at [08:00] → Allowed</p>
-            <p>
-              - Booking a 1 hour 20 min service → Rounded to 2 hours → Not
-              allowed, slot [09:00] is full
-            </p>
-            <p>
-              {" "}
-              - Booking a 1-hour service → Slot available normally When
-              selecting time (e.g., slot 08:00) with 2 doctors:
-            </p>
-            <p>
-              - If any doctor is available, booking is allowed but must select
-              an available doctor{" "}
-            </p>
-            <p>
-              - If all doctors are booked, the slot shows Full and cannot be
-              booked{" "}
-            </p>
-            <div className="flex items-center text-start gap-2 text-sky-500">
-              <FaRobot />
-              <p className=" font-bold text-xl sm:text-2xl">Automatic Jobs</p>
+            <div className="space-y-2 max-w-4xl text-lg text-start">
+              <p>
+                {" "}
+                Example scenario: slot status: [08:00 Available] [09:00 Full]
+                (from DB){" "}
+              </p>
+              <p>- Booking a 1-hour service at [08:00] → Allowed</p>
+              <p>
+                - Booking a 1 hour 20 min service → Rounded to 2 hours → Not
+                allowed, slot [09:00] is full
+              </p>
+              <p> - Booking a 1-hour service → Slot available normally</p>
+              <p>When selecting time (e.g., slot 08:00) with 2 doctors:</p>
+              <p>
+                - If any doctor is available, booking is allowed but must select
+                an available doctor
+              </p>
+              <p>
+                - If all doctors are booked, the slot shows Full and cannot be
+                booked{" "}
+              </p>
             </div>
-            <div className="space-y-2">
+
+            <div className="flex items-center text-start gap-2 text-sky-500">
+              <p className=" font-bold text-xl sm:text-3xl">Automatic Jobs</p>
+            </div>
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>
                 - If the user does not confirm within 10 minutes of the slot →
                 the slot is released for walk-in
@@ -163,23 +159,21 @@ function page() {
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <History />
-              <p className=" font-bold text-xl sm:text-2xl">
+              <p className=" font-bold text-xl sm:text-3xl">
                 Appointment History
               </p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>View both current and past appointments</p>
               <p>- Cancel only if the appointment time has not passed </p>
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <FaLine />
-              <p className=" font-bold text-xl sm:text-2xl">
+              <p className=" font-bold text-xl sm:text-3xl">
                 Line Notifications
               </p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-4xl text-lg">
               {" "}
               <p>- Connect / Disconnect Line </p>
               <p>- Appointment confirmed / Appointment canceled</p>
@@ -191,54 +185,52 @@ function page() {
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <MdOutlineSecurity />
-              <p className="font-bold text-xl sm:text-2xl">Security</p>
+              <p className="font-bold text-xl sm:text-3xl">Security</p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>- Authentication using JWT </p>
               <p>- Passwords hashed with bcrypt</p>
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <MdComputer />
-              <p className="font-bold text-xl sm:text-2xl">Responsive Design</p>
+              <p className="font-bold text-xl sm:text-3xl">Responsive Design</p>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 max-w-4xl text-lg">
               <p>
                 - Responsive layout designed for mobile, tablet, and desktop
                 screens
               </p>
             </div>
-          </div>
-          <div className="flex items-center text-start gap-2 text-sky-500">
-            <FaLayerGroup />
-            <p className="font-bold text-xl sm:text-2xl">Tech Stack</p>
-          </div>
-          <div className="overflow-x-auto">
-            <Table className="border border-slate-600 rounded-xl min-w-full">
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="text-sky-500 text-lg md:text-xl font-bold text-center border border-slate-600 whitespace-nowrap sm:min-w-[200px]">
-                    Category
-                  </TableHead>
-                  <TableHead className="text-sky-500 text-lg md:text-xl w-auto font-bold text-center border border-slate-600 whitespace-nowrap w-full ">
-                    Technologies
-                  </TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {techStacks.map((techStack) => (
-                  <TableRow key={techStack.category}>
-                    <TableCell className="font-medium text-center border border-slate-600 whitespace-nowrap text-sm md:text-base">
-                      {techStack.category}
-                    </TableCell>
-                    <TableCell className="text-center border border-slate-600 text-sm md:text-base break-words hyphens-auto">
-                      {techStack.technologies}
-                    </TableCell>
+            <div className="flex items-center text-start gap-2 text-sky-500">
+              <FaLayerGroup className="text-xl sm:text-3xl" />
+              <p className="font-bold text-xl sm:text-3xl">Tech Stack</p>
+            </div>
+            <div className="overflow-x-auto  w-full max-w-4xl">
+              <Table className="border border-slate-600 rounded-xl min-w-full">
+                <TableHeader>
+                  <TableRow>
+                    <TableHead className="text-sky-500 text-lg md:text-xl font-bold text-center border border-slate-600 whitespace-nowrap sm:min-w-[200px]">
+                      Category
+                    </TableHead>
+                    <TableHead className="text-sky-500 text-lg md:text-xl w-auto font-bold text-center border border-slate-600 whitespace-nowrap w-full ">
+                      Technologies
+                    </TableHead>
                   </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+                </TableHeader>
+                <TableBody>
+                  {techStacks.map((techStack) => (
+                    <TableRow key={techStack.category}>
+                      <TableCell className="font-medium text-center border border-slate-600 whitespace-nowrap text-sm md:text-base">
+                        {techStack.category}
+                      </TableCell>
+                      <TableCell className="text-center border border-slate-600 text-sm md:text-base break-words hyphens-auto">
+                        {techStack.technologies}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
           </div>
         </div>
       </div>

@@ -9,7 +9,12 @@ function Hero() {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const texts = ["Web Developer", "Full Stack Developer"];
+  const texts = [
+    "Web Developer",
+    "Full Stack Developer",
+    "Front-End Developer",
+    "Back-End Developer",
+  ];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -77,18 +82,7 @@ function Hero() {
             >
               <Linkedin className="text-sky-400/90 group-hover:text-sky-700 transition h-6 w-6 sm:h-8 sm:w-8" />
             </a>
-            <a
-              href="/CV/CV_SUTTHIPORN_RUANGTHAM.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center  group rounded-full p-3 px-4 sm:p-2 gap-2 border-sky-700/90 hover:border-sky-900 border-2 transition-all duration-300"
-              download
-            >
-              <Download className="w-5 h-5 text-sky-400/90 group-hover:text-sky-700 transition" />
-              <p className=" text-sky-400/90 group-hover:text-sky-700 transition font-bold">
-                Download CV
-              </p>
-            </a>
+            
           </div>
         </div>
         <div className="flex flex-1 items-center justify-center">

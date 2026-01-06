@@ -74,7 +74,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-3 sm:p-4 md:p-5 lg:p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/pharventory_canva.png"
+                    src="/images/projects/pharventory/pharventory_canva.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -124,11 +124,11 @@ function Project() {
                 <div className="grid grid-cols-2 mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
-                      variant="link"
-                      className="text-amber-400 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
                     >
                       <a
-                        href="https://pharventory.vercel.app/"
+                        href="https://pharventory.vercel.app/login"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2"
@@ -159,7 +159,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/toothtoday_canva_1pic.png"
+                    src="/images/projects/toothtoday/toothtoday_canva_1pic.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -223,8 +223,8 @@ function Project() {
                 <div className="grid grid-cols-2 mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
-                      variant="link"
-                      className="text-amber-400 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
                     >
                       <a
                         href="https://tooth-today.vercel.app/"
@@ -258,7 +258,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/tellsmama_canva_1pic.png"
+                    src="/images/projects/tellsmama/tellsmama_canva_1pic.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -315,8 +315,8 @@ function Project() {
                 <div className="grid grid-cols-2 mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
-                      variant="link"
-                      className="text-amber-400 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
                     >
                       <a
                         href="https://tellsmama.netlify.app/"
@@ -350,7 +350,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/eval_canva.png"
+                    src="/images/projects/eval/eval_canva.png"
                     width={400}
                     height={400}
                     alt="Picture of author"
@@ -410,7 +410,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/CuNurse_canva.png"
+                    src="/images/projects/cunurse/CuNurse_canva.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -451,7 +451,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/swensen_canva_mockup.png"
+                    src="/images/projects/swensen/swensen_canva_mockup.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -494,8 +494,8 @@ function Project() {
                 <div className="flex justify-center mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
-                      variant="link"
-                      className="text-amber-400 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
                     >
                       <a
                         href="https://simulate-swensen-practice.netlify.app/"
@@ -515,7 +515,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/gho_mockup.png"
+                    src="/images/projects/gallery_hall_online/gho_mockup.png"
                     width={400}
                     height={300}
                     alt="Picture of author"
@@ -553,8 +553,8 @@ function Project() {
                 <div className="flex items-center justify-center mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
-                      variant="link"
-                      className="text-amber-400 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
                     >
                       <a
                         href="https://gho-project.web.app/"
@@ -588,7 +588,7 @@ function Project() {
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
                 <div className="flex items-center justify-center w-full">
                   <Image
-                    src="/images/projects/animezone_crop.png"
+                    src="/images/projects/animezone/animezone_crop.png"
                     width={600}
                     height={200}
                     alt="Picture of author"
