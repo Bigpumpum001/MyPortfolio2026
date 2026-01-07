@@ -145,6 +145,8 @@ function Project() {
                     >
                       <a
                         href="/projects/pharventory"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
                         <p className="">View Details</p>
@@ -244,6 +246,8 @@ function Project() {
                     >
                       <a
                         href="/projects/toothtoday"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
                         <p className="">View Details</p>
@@ -336,6 +340,8 @@ function Project() {
                     >
                       <a
                         href="/projects/tellsmama"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
                         <p className="">View Details</p>
@@ -396,6 +402,8 @@ function Project() {
                     >
                       <a
                         href="/projects/eval"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
                         <p className="">View Details</p>
@@ -625,6 +633,8 @@ function Project() {
                     >
                       <a
                         href="/projects/animezone"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2"
                       >
                         <p className="">View Details</p>

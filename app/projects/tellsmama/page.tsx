@@ -73,7 +73,7 @@ function page() {
             </p>
             <div className="flex justify-center">
               <Image
-                src="/images/projects/tellsmama/home.png"
+                src="/images/projects/tellsmama/Home.png"
                 width={800}
                 height={600}
                 alt="ToothToday booking interface"
@@ -136,7 +136,7 @@ function page() {
               <CarouselContent className="">
                 <CarouselItem className="flex justify-center ">
                   <Image
-                    src="/images/projects/tellsmama/addproduct.png"
+                    src="/images/projects/tellsmama/AddProduct.png"
                     width={800}
                     height={600}
                     alt="ToothToday booking interface"
@@ -146,7 +146,7 @@ function page() {
 
                 <CarouselItem className="flex justify-center">
                   <Image
-                    src="/images/projects/tellsmama/dashboard.png"
+                    src="/images/projects/tellsmama/Dashboard.png"
                     width={800}
                     height={600}
                     alt="ToothToday booking interface"
@@ -170,7 +170,7 @@ function page() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/images/projects/tellsmama/cart.png"
+                src="/images/projects/tellsmama/Cart.png"
                 width={800}
                 height={600}
                 alt="ToothToday booking interface"
@@ -178,10 +178,12 @@ function page() {
               />
             </div>
 
-            <div className="space-y-2 max-w-4xl   leading-relaxed"></div>
-            <p className="sm:text-lg">
-              Users can add items to their cart in preparation for checkout
-            </p>
+            <div className="space-y-2 max-w-4xl   leading-relaxed">
+              <p className="sm:text-lg">
+                Users can add items to their cart in preparation for checkout
+              </p>
+            </div>
+
             <div className="flex items-center text-start gap-2 text-sky-500">
               <p className=" font-bold text-xl sm:text-3xl">
                 Manage (for Admin)
@@ -191,7 +193,7 @@ function page() {
               <CarouselContent className="">
                 <CarouselItem className="flex justify-center">
                   <Image
-                    src="/images/projects/tellsmama/addcategory.png"
+                    src="/images/projects/tellsmama/AddCategory.png"
                     width={800}
                     height={600}
                     alt="ToothToday booking interface"
@@ -199,7 +201,7 @@ function page() {
                   />
                 </CarouselItem>
 
-                <CarouselItem className="flex justify-center ">
+                <CarouselItem className="flex justify-center">
                   <Image
                     src="/images/projects/tellsmama/CategoryManage.png"
                     width={800}
@@ -209,7 +211,7 @@ function page() {
                   />
                 </CarouselItem>
 
-                <CarouselItem className="flex justify-center ">
+                <CarouselItem className="flex justify-center">
                   <Image
                     src="/images/projects/tellsmama/ProductManage.png"
                     width={800}

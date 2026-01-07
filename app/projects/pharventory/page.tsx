@@ -204,10 +204,7 @@ function page() {
               <p>- Linked medicine and batch details.</p>
               <p>- Operator tracking.</p>
               <p>-Timestamped transaction records.</p>
-              <p>
-                This system reduces operational errors and supports future audit
-                requirements.
-              </p>
+              
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
@@ -239,13 +236,22 @@ function page() {
                 Dispensing System
               </p>
             </div>
-            <Carousel className="w-full max-w-4xl">
+            <div className="flex justify-center w-full max-w-4xl">
+              <Image
+                src="/images/projects/pharventory/Dispense.png"
+                width={1920}
+                height={600}
+                alt="ToothToday booking interface"
+                className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+              />
+            </div>
+            {/* <Carousel className="w-full max-w-4xl">
               <CarouselContent className="">
                 <CarouselItem className="flex justify-center ">
                   <Image
-                    src="/images/projects/pharventory/dispense.png"
+                    src="/images/projects/pharventory/Dispense.png"
                     width={1920}
-                    height={1920}
+                    height={600}
                     alt="ToothToday booking interface"
                     className="rounded-lg shadow-lg max-w-full h-auto object-cover"
                   />
@@ -272,7 +278,7 @@ function page() {
               </CarouselContent>
               <CarouselPrevious className="text-sky-600" />
               <CarouselNext className="text-sky-600  " />
-            </Carousel>
+            </Carousel> */}
             <div className="space-y-2 max-w-4xl text-lg">
               <p>
                 - FEFO (First Expire First Out) – automatically selects batches
@@ -316,13 +322,13 @@ function page() {
                 audit requirements
               </p>
 
-              <p className="font-bold text-sky-400">Cost Reduction</p>
+              {/* <p className="font-bold text-sky-400">Cost Reduction</p>
 
               <p className="indent-8">
                 - Minimized losses from expired medicines
               </p>
 
-              <p className="indent-8">- Improved staff productivity</p>
+              <p className="indent-8">- Improved staff productivity</p> */}
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
               <FaLayerGroup className=" text-xl sm:text-3xl" />
