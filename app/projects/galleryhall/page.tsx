@@ -137,7 +137,7 @@ function page() {
                 🎨 Core Auction System{" "}
               </p>
             </div>
-            <div className="flex justify-start">
+            <div className="flex justify-center">
               <Image
                 src="/images/projects/gallery_hall_online/add-auction.png"
                 width={800}

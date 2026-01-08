@@ -455,69 +455,7 @@ function Project() {
                 </CardDescription>
               </Card>
 
-              {/* Swensen's */}
-              <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
-                <div className="flex items-center justify-center w-full">
-                  <Image
-                    src="/images/projects/swensen/swensen_canva_mockup.png"
-                    width={400}
-                    height={300}
-                    alt="Picture of author"
-                    className="rounded-sm w-full h-auto"
-                  />
-                </div>
-
-                <CardTitle className="flex items-center justify-center gap-3 text-lg sm:text-xl md:text-2xl text-center text-sky-500 font-extrabold mt-2">
-                  <div className="">
-                    <span>Simulated Swensen&apos;s Site</span>
-                    <Badge
-                      variant="secondary"
-                      className="ms-3 bg-slate-800/80   "
-                    >
-                      <p className="text-sm font-extrabold text-cyan-500 whitespace-nowrap">
-                        Side Project
-                      </p>
-                    </Badge>
-                  </div>
-                </CardTitle>
-                <div className="flex items-center justify-center gap-2">
-                  <TechIcon icon={<Html5Original size={30} />} name="HTML" />
-                  <TechIcon
-                    icon={<FaBootstrap size={30} color="#7111f5" />}
-                    name="Bootstrap"
-                  />
-                  <TechIcon icon={<Css3Original size={30} />} name="CSS" />
-                  <TechIcon
-                    icon={<JavascriptOriginal size={30} />}
-                    name="JavaScript"
-                  />
-                </div>
-                <CardDescription className="text-white">
-                  <p className="sm:text-lg indent-8 leading-relaxed">
-                    Practice project inspired by Swensen&apos;s website,
-                    developed to improve front-end web development skills with
-                    focus on responsive design and UI replication.
-                  </p>
-                </CardDescription>
-                <div className="flex justify-center mt-auto">
-                  <CardDescription className="flex justify-center text-white gap-3">
-                    <Button
-                      variant="default"
-                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
-                    >
-                      <a
-                        href="https://simulate-swensen-practice.netlify.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
-                      >
-                        <p className="">Live Demo</p>
-                        <ExternalLink className="sm:size-7" />
-                      </a>
-                    </Button>
-                  </CardDescription>
-                </div>
-              </Card>
+              
 
               {/* Gallery Hall Online */}
               <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
@@ -639,6 +577,70 @@ function Project() {
                       >
                         <p className="">View Details</p>
                         <Info className="sm:size-7" />
+                      </a>
+                    </Button>
+                  </CardDescription>
+                </div>
+              </Card>
+
+              {/* Swensen's */}
+              <Card className=" hover:border-sky-400 transform transition-transform duration-500 ease-in-out hover:scale-105 p-6 border-slate-700 border-2 rounded-2xl bg-slate-800/20 gap-y-3">
+                <div className="flex items-center justify-center w-full">
+                  <Image
+                    src="/images/projects/swensen/swensen_canva_mockup.png"
+                    width={400}
+                    height={300}
+                    alt="Picture of author"
+                    className="rounded-sm w-full h-auto"
+                  />
+                </div>
+
+                <CardTitle className="flex items-center justify-center gap-3 text-lg sm:text-xl md:text-2xl text-center text-sky-500 font-extrabold mt-2">
+                  <div className="">
+                    <span>Simulated Swensen&apos;s Site</span>
+                    <Badge
+                      variant="secondary"
+                      className="ms-3 bg-slate-800/80   "
+                    >
+                      <p className="text-sm font-extrabold text-cyan-500 whitespace-nowrap">
+                        Side Project
+                      </p>
+                    </Badge>
+                  </div>
+                </CardTitle>
+                <div className="flex items-center justify-center gap-2">
+                  <TechIcon icon={<Html5Original size={30} />} name="HTML" />
+                  <TechIcon
+                    icon={<FaBootstrap size={30} color="#7111f5" />}
+                    name="Bootstrap"
+                  />
+                  <TechIcon icon={<Css3Original size={30} />} name="CSS" />
+                  <TechIcon
+                    icon={<JavascriptOriginal size={30} />}
+                    name="JavaScript"
+                  />
+                </div>
+                <CardDescription className="text-white">
+                  <p className="sm:text-lg indent-8 leading-relaxed">
+                    UI Practice project inspired by Swensen&apos;s website,
+                    developed to improve front-end web development skills with
+                    focus on responsive design and UI replication.
+                  </p>
+                </CardDescription>
+                <div className="flex justify-center mt-auto">
+                  <CardDescription className="flex justify-center text-white gap-3">
+                    <Button
+                      variant="default"
+                      className="text-amber-400 hover:text-amber-500 transition-colors duration-300 sm:text-lg font-bold rounded-lg bg-slate-800"
+                    >
+                      <a
+                        href="https://simulate-swensen-practice.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <p className="">Live Demo</p>
+                        <ExternalLink className="sm:size-7" />
                       </a>
                     </Button>
                   </CardDescription>
