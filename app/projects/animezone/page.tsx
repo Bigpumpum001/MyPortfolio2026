@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   Calendar,
@@ -15,6 +16,7 @@ import { FaRobot, FaLayerGroup, FaCartPlus } from "react-icons/fa";
 import { FaLine } from "react-icons/fa6";
 
 import { MdComputer, MdOutlineSecurity, MdPayment } from "react-icons/md";
+import { useTranslations } from "next-intl";
 import {
   Table,
   TableBody,
@@ -23,6 +25,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 const techStacks = [
   {
     category: "Platform",
@@ -37,7 +40,9 @@ const techStacks = [
     technologies: "SQlite",
   },
 ];
-function page() {
+function Page() {
+  const t = useTranslations("animezone");
+
   return (
     <>
       <div
@@ -45,12 +50,26 @@ function page() {
         className="w-full p-4 lg:p-6 md:p-8  my-10 z-10  flex items-center justify-center"
       >
         <div className="mx-auto max-w-7xl w-full space-y-5 bg-gray-900/50 border border-slate-800  p-10 rounded-2xl">
+            <div className="flex justify-end gap-2">
+            <Button 
+              variant="default" 
+              onClick={() => window.location.href = '/projects/animezone?lang=en'}
+            >
+              ENG
+            </Button>
+            <Button 
+              variant="default"
+              onClick={() => window.location.href = '/projects/animezone?lang=th'}
+            >
+              TH
+            </Button>
+          </div>
           <div className="flex flex-col items-center justify-center space-y-5">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text from-blue-600 to-sky-500 text-transparent">
-              Animezone
+              {t("title")}
             </h1>
             <p className="text-xl sm:text-3xl font-bold text-slate-100 ">
-              Manga book ordering Application
+              {t("subtitle")}
             </p>
             {/* <p className="sm:text-xl font-medium indent-8 leading-relaxed">
               ToothToday is an online dental appointment system that I designed
@@ -72,7 +91,7 @@ function page() {
             <div className="flex items-center justify-center  gap-2 bg-gradient-to-r bg-clip-text from-blue-600 to-sky-500 text-transparent">
               <Star className="text-amber-600" />
               <p className=" font-bold text-xl sm:text-4xl text-amber-300">
-                Key Features
+                {t("keyFeatures")}
               </p>
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
@@ -247,4 +266,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

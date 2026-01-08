@@ -189,19 +189,19 @@ function page() {
                 Manage (for Admin)
               </p>
             </div>
-            <Carousel className="w-full max-w-4xl">
+            <Carousel className="w-full max-w-4xl ">
               <CarouselContent className="">
-                <CarouselItem className="flex justify-center">
+                <CarouselItem className="flex justify-center md:basis-2/3 ">
                   <Image
                     src="/images/projects/tellsmama/AddCategory.png"
                     width={800}
                     height={600}
                     alt="ToothToday booking interface"
-                    className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    className="rounded-lg shadow-lg max-w-full  h-auto object-cover "
                   />
                 </CarouselItem>
 
-                <CarouselItem className="flex justify-center">
+                <CarouselItem className="flex justify-center md:basis-2/3 ">
                   <Image
                     src="/images/projects/tellsmama/CategoryManage.png"
                     width={800}
@@ -211,7 +211,7 @@ function page() {
                   />
                 </CarouselItem>
 
-                <CarouselItem className="flex justify-center">
+                <CarouselItem className="flex justify-center md:basis-2/3">
                   <Image
                     src="/images/projects/tellsmama/ProductManage.png"
                     width={800}

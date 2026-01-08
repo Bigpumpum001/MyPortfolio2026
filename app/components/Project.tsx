@@ -558,7 +558,7 @@ function Project() {
                     categories, admin dashboard, and auction history.
                   </p>
                 </CardDescription>
-                <div className="flex items-center justify-center mt-auto">
+                <div className="grid grid-cols-2 mt-auto">
                   <CardDescription className="flex justify-center text-white gap-3">
                     <Button
                       variant="default"
@@ -576,7 +576,7 @@ function Project() {
                     </Button>
                   </CardDescription>
                   <CardDescription className="flex justify-center text-white gap-3">
-                    {/* <Button
+                    <Button
                       variant="link"
                       className="text-sky-500 hover:text-sky-600 transition-colors duration-300 sm:text-lg font-bold"
                     >
@@ -587,7 +587,7 @@ function Project() {
                         <p className="">View Details</p>
                         <Info className="sm:size-7" />
                       </a>
-                    </Button> */}
+                    </Button>
                   </CardDescription>
                 </div>
               </Card>

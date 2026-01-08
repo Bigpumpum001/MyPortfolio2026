@@ -202,6 +202,33 @@ function page() {
               </p>
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
+              <p className=" font-bold text-xl sm:text-3xl">Business Impact </p>
+            </div>
+
+            <div className="space-y-2 max-w-4xl text-lg">
+              {/* <p className="font-bold text-sky-400">Improved Efficiency</p> */}
+              <p>
+                - Reduced front-desk workload by replacing manual appointment
+                booking with an automated system
+              </p>
+              <p>
+                - Minimized double-booking issues through real-time slot
+                management
+              </p>
+              <p>
+                - Enabled patients to book appointments independently 24/7,
+                improving accessibility and convenience
+              </p>
+              <p>
+                - Decreased no-show rates with automated reminder and
+                notification system
+              </p>
+              <p>
+                - Improved doctor schedule management, allowing clinics to
+                utilize time more efficiently
+              </p>
+            </div>
+            <div className="flex items-center text-start gap-2 text-sky-500">
               <FaLayerGroup className="text-xl sm:text-3xl" />
               <p className="font-bold text-xl sm:text-3xl">Tech Stack</p>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import {
   NavigationMenu,
@@ -15,9 +16,27 @@ import {
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
+    // Check if we're on a project detail page
+    setTimeout(() => {
+      if (
+        pathname.startsWith("/projects/") 
+      ) {
+        setActiveSection("projects");
+        return;
+      }
+    }, 300);
+
+    // Reset to home if we're on the home page
+    // setTimeout(() => {
+    //   if (pathname === "/") {
+    //     setActiveSection("home");
+    //   }
+    // }, 300);
+
     const handleScroll = () => {
       const sections = ["home", "skills", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
@@ -37,9 +56,14 @@ function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    // Only add scroll listener if we're on the home page
+    if (pathname === "/") {
+      // Initial check when component mounts
+      handleScroll();
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [pathname]);
 
   const navItems = [
     { name: "Home", href: "/#home", id: "home" },

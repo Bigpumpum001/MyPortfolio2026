@@ -2,6 +2,7 @@
 import Particles from "@/components/ui/Particles";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+// import { NextIntlClientProvider } from "next-intl";
 
 export default function LayoutWrapper({
   children,
@@ -28,9 +29,7 @@ export default function LayoutWrapper({
       {/* Content overlay */}
       <div className="relative z-10 flex flex-col items-center text-white min-h-screen">
         <Navbar />
-        <div className="flex-1 w-full mt-20">
-          {children}
-        </div>
+        <div className="flex-1 w-full mt-20">{children}</div>
         <Footer />
       </div>
     </div>

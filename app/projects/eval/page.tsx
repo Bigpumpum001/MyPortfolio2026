@@ -183,7 +183,7 @@ function page() {
               </p>
             </div>
             <div className="space-y-2 max-w-4xl text-lg">
-              <p>- Designed a 4-step workflow system.</p>
+              <p>- Developed .NET MVC backend logic and Wrote stored procedures to support a 4-step workflow process.</p>
               <p>
                 - Each step has dedicated screens based on user roles (e.g.,
                 Faculty, Administrator), with appropriate access and editing

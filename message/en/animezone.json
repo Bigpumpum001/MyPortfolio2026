@@ -1,0 +1,20 @@
+{
+  "title": "Animezone",
+  "subtitle": "Manga book ordering Application",
+  "keyFeatures": "Key Features",
+  "signUpLogin": "Sign Up & Login",
+  "signUpDescription": "The Sign Up or Registration page is process new users must complete to create an account within system. If a user already has an account, they can go to Login page by clicking Login button, and system will then display Login page for user.",
+  "home": "Home",
+  "homeDescription": "The Home page will consist of recommended anime and trending anime. Users can click on each anime item to view more information. Additionally, there will be a Flyout menu displayed in top-left corner for users to navigate to various pages.",
+  "profile": "Profile",
+  "profileDescription": "This is a page for users to manage their own user accounts. If a user wishes to edit their information, they must click Edit button. Users can then edit their Name, Email, and Password. Additionally, users can also delete their user account by clicking Delete button.",
+  "addToFavorite": "Add to favorite",
+  "character": "Character",
+  "cart": "Cart",
+  "cartDescription": "The Cart page displays list of products and total price of all items that user has added. Users can increase and decrease the quantity of products by clicking \"+\" or \"-\" buttons.",
+  "payment": "Payment",
+  "paymentDescription": "This page displays all information for user to proceed with payment. Payment channels will be shown. Once user has made the payment, they must send proof of payment via shop's Line account before the order can be completed.",
+  "techStack": "Tech Stack",
+  "category": "Category",
+  "technologies": "Technologies"
+}

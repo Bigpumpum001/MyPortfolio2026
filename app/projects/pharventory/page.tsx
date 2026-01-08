@@ -245,40 +245,6 @@ function page() {
                 className="rounded-lg shadow-lg max-w-full h-auto object-cover"
               />
             </div>
-            {/* <Carousel className="w-full max-w-4xl">
-              <CarouselContent className="">
-                <CarouselItem className="flex justify-center ">
-                  <Image
-                    src="/images/projects/pharventory/Dispense.png"
-                    width={1920}
-                    height={600}
-                    alt="ToothToday booking interface"
-                    className="rounded-lg shadow-lg max-w-full h-auto object-cover"
-                  />
-                </CarouselItem>
-
-                <CarouselItem className="flex justify-center">
-                  <Image
-                    src="/images/projects/pharventory/Dispense_complete.png"
-                    width={1920}
-                    height={600}
-                    alt="ToothToday booking interface"
-                    className="rounded-lg shadow-lg max-w-full h-auto object-cover"
-                  />
-                </CarouselItem>
-                <CarouselItem className="flex justify-center">
-                  <Image
-                    src="/images/projects/pharventory/Dispense_receipt.png"
-                    width={1920}
-                    height={600}
-                    alt="ToothToday booking interface"
-                    className="rounded-lg shadow-lg max-w-full h-auto object-contain"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="text-sky-600" />
-              <CarouselNext className="text-sky-600  " />
-            </Carousel> */}
             <div className="space-y-2 max-w-4xl text-lg">
               <p>
                 - FEFO (First Expire First Out) – automatically selects batches
