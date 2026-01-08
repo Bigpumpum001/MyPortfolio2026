@@ -1,36 +1,8 @@
 import Image from "next/image";
-import {
-  BicepsFlexed,
-  Calculator,
-  Calendar,
-  Clock,
-  Code,
-  Computer,
-  CreditCard,
-  Database,
-  DollarSign,
-  History,
-  Home,
-  LineChart,
-  Lock,
-  Receipt,
-  Settings,
-  Share,
-  Star,
-  User,
-} from "lucide-react";
+import { Star } from "lucide-react";
 
-import {
-  FaRobot,
-  FaLayerGroup,
-  FaCartPlus,
-  FaProductHunt,
-  FaFileExcel,
-} from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
 
-import { FaLine } from "react-icons/fa6";
-
-import { MdComputer, MdOutlineSecurity, MdPayment } from "react-icons/md";
 import {
   Table,
   TableBody,
@@ -39,7 +11,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { RiStockFill } from "react-icons/ri";
 import {
   Carousel,
   CarouselContent,
@@ -204,7 +175,6 @@ function page() {
               <p>- Linked medicine and batch details.</p>
               <p>- Operator tracking.</p>
               <p>-Timestamped transaction records.</p>
-              
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">

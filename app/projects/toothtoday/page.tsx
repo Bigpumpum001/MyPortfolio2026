@@ -1,11 +1,8 @@
 import Image from "next/image";
-import { Calendar, Clock, History, Star, User } from "lucide-react";
+import { Star } from "lucide-react";
 
-import { FaRobot, FaLayerGroup } from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
 
-import { FaLine } from "react-icons/fa6";
-
-import { MdComputer, MdOutlineSecurity } from "react-icons/md";
 import {
   Table,
   TableBody,

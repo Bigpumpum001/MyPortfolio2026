@@ -1,22 +1,11 @@
 "use client";
 import Image from "next/image";
-import {
-  Calendar,
-  Clock,
-  Heart,
-  History,
-  Home,
-  Star,
-  User,
-  User2,
-} from "lucide-react";
+import { Star } from "lucide-react";
 
-import { FaRobot, FaLayerGroup, FaCartPlus } from "react-icons/fa";
+import {  FaLayerGroup } from "react-icons/fa";
 
-import { FaLine } from "react-icons/fa6";
 
-import { MdComputer, MdOutlineSecurity, MdPayment } from "react-icons/md";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import {
   Table,
   TableBody,
@@ -41,7 +30,7 @@ const techStacks = [
   },
 ];
 function Page() {
-  const t = useTranslations("animezone");
+  // const t = useTranslations("animezone");
 
   return (
     <>
@@ -50,26 +39,30 @@ function Page() {
         className="w-full p-4 lg:p-6 md:p-8  my-10 z-10  flex items-center justify-center"
       >
         <div className="mx-auto max-w-7xl w-full space-y-5 bg-gray-900/50 border border-slate-800  p-10 rounded-2xl">
-            <div className="flex justify-end gap-2">
-            <Button 
-              variant="default" 
-              onClick={() => window.location.href = '/projects/animezone?lang=en'}
+          {/* <div className="flex justify-end gap-2">
+            <Button
+              variant="default"
+              onClick={() =>
+                (window.location.href = "/projects/animezone?lang=en")
+              }
             >
               ENG
             </Button>
-            <Button 
+            <Button
               variant="default"
-              onClick={() => window.location.href = '/projects/animezone?lang=th'}
+              onClick={() =>
+                (window.location.href = "/projects/animezone?lang=th")
+              }
             >
               TH
             </Button>
-          </div>
+          </div> */}
           <div className="flex flex-col items-center justify-center space-y-5">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text from-blue-600 to-sky-500 text-transparent">
-              {t("title")}
+              Animezone{" "}
             </h1>
             <p className="text-xl sm:text-3xl font-bold text-slate-100 ">
-              {t("subtitle")}
+              Manga book ordering Application
             </p>
             {/* <p className="sm:text-xl font-medium indent-8 leading-relaxed">
               ToothToday is an online dental appointment system that I designed
@@ -91,7 +84,7 @@ function Page() {
             <div className="flex items-center justify-center  gap-2 bg-gradient-to-r bg-clip-text from-blue-600 to-sky-500 text-transparent">
               <Star className="text-amber-600" />
               <p className=" font-bold text-xl sm:text-4xl text-amber-300">
-                {t("keyFeatures")}
+                Key Features
               </p>
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">

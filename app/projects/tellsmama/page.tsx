@@ -1,23 +1,8 @@
 import Image from "next/image";
-import {
-  Calendar,
-  Clock,
-  Computer,
-  History,
-  Home,
-  Settings,
-  Star,
-  User,
-} from "lucide-react";
+import { Star } from "lucide-react";
 
-import {
-  FaRobot,
-  FaLayerGroup,
-  FaCartPlus,
-  FaProductHunt,
-} from "react-icons/fa";
+import { FaLayerGroup } from "react-icons/fa";
 
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
