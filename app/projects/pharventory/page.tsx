@@ -172,9 +172,9 @@ function page() {
             </div>
             <div className="space-y-2 max-w-2xl text-lg">
               <p>- Stock movement tracking (IN, OUT, ADJUST)</p>
-              <p>- Linked medicine and batch details.</p>
-              <p>- Operator tracking.</p>
-              <p>-Timestamped transaction records.</p>
+              <p>- Linked medicine and batch details</p>
+              <p>- Operator tracking</p>
+              <p>-Timestamped transaction records</p>
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
@@ -198,7 +198,7 @@ function page() {
                 - View dispensed medicines, quantities, prices, patient names,
                 and timestamps
               </p>
-              <p>- Synchronized with dispensing systems.</p>
+              <p>- Synchronized with dispensing systems</p>
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
@@ -218,9 +218,9 @@ function page() {
             <div className="space-y-2 max-w-4xl text-lg">
               <p>
                 - FEFO (First Expire First Out) – automatically selects batches
-                with the nearest expiration date.
+                with the nearest expiration date
               </p>
-              <p>- Automatic price and total calculation .</p>
+              <p>- Automatic price and total calculation </p>
               <p>- Transactional dispensing to ensure data consistency</p>
               <p>- Instant receipt generation and printable output</p>
             </div>
@@ -237,8 +237,8 @@ function page() {
               />
             </div>
             <div className="space-y-2 max-w-4xl text-lg">
-              <p>- JWT Authentication.</p>
-              <p>- Secure password hashing with bcrypt.</p>
+              <p>- JWT Authentication</p>
+              <p>- Secure password hashing with bcrypt</p>
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
               <p className=" font-bold text-xl sm:text-3xl">Business Impact </p>

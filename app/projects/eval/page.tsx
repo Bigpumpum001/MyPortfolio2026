@@ -200,10 +200,10 @@ function page() {
               <p className=" font-bold text-xl sm:text-2xl">Summary</p>
             </div>
             <div className="space-y-2 max-w-4xl text-lg">
-              <p>- Created summary counts for each workflow step.</p>
+              <p>- Created summary counts for each workflow step</p>
               <p>
                 - Built summary dashboards and reports to track data status and
-                performance per evaluation round.
+                performance per evaluation round
               </p>
             </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
