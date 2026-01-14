@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
-import { Star } from "lucide-react";
-
+import { Clipboard, Paperclip, Star } from "lucide-react";
+import { toast } from "sonner";
 import { FaLayerGroup } from "react-icons/fa";
 
 import {
@@ -11,6 +12,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Button } from "@/components/ui/button";
 const techStacks = [
   {
     category: "Front-End",
@@ -143,22 +152,18 @@ function page() {
             </div>
 
             <div className="flex items-center text-start gap-2 text-sky-500">
-              <p className=" font-bold text-xl sm:text-3xl">Automatic Jobs</p>
-            </div>
-            <div className="space-y-2 max-w-4xl text-lg">
-              <p>
-                - If the user does not confirm within 10 minutes of the slot →
-                the slot is released for walk-in
-              </p>
-              <p>
-                - Slots in progress are marked complete after the treatment ends
-              </p>
-            </div>
-
-            <div className="flex items-center text-start gap-2 text-sky-500">
               <p className=" font-bold text-xl sm:text-3xl">
                 Appointment History
               </p>
+            </div>
+            <div className="flex justify-start my-6">
+              <Image
+                src="/images/projects/toothtoday/booking_history.png"
+                width={800}
+                height={600}
+                alt="ToothToday booking interface"
+                className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+              />
             </div>
             <div className="space-y-2 max-w-4xl text-lg">
               <p>View both current and past appointments</p>
@@ -170,6 +175,15 @@ function page() {
                 Line Notifications
               </p>
             </div>
+            <div className="flex justify-start my-6">
+              <Image
+                src="/images/projects/toothtoday/line_noti.png"
+                width={800}
+                height={600}
+                alt="ToothToday booking interface"
+                className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+              />
+            </div>
             <div className="space-y-2 max-w-4xl text-lg">
               {" "}
               <p>- Connect / Disconnect Line </p>
@@ -180,15 +194,187 @@ function page() {
                 - Advance notifications before the appointment (1 hr / 24 hrs){" "}
               </p>
             </div>
-
+            <div className="flex items-center text-start gap-2 text-sky-500">
+              <p className=" font-bold text-xl sm:text-3xl">Automatic Jobs</p>
+            </div>
+            <div className="space-y-2 max-w-4xl text-lg">
+              <p>
+                - If the user does not confirm within 10 minutes of the slot →
+                the slot is released for walk-in
+              </p>
+              <p>
+                - Slots in progress are marked complete after the treatment ends
+              </p>
+            </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
               <p className="font-bold text-xl sm:text-3xl">Security</p>
             </div>
             <div className="space-y-2 max-w-4xl text-lg">
               <p>- Authentication using JWT </p>
               <p>- Passwords hashed with bcrypt</p>
+              <p>- Role-based access control (Admin permission verification)</p>
             </div>
 
+            <div className="flex items-center text-center gap-2 text-sky-500 ">
+              <p className="font-bold text-xl sm:text-3xl">Admin Panel</p>
+            </div>
+
+            <div className="space-y-2 max-w-4xl text-lg text-center">
+              <p className=" text-md sm:text-xl font-semibold text-amber-300">
+                Demo Admin Account
+              </p>
+              <span className="sm:text-base text-white">
+                (Unlimited booking for testing purposes, Full access to the
+                admin panel features)
+              </span>
+
+              <div className="flex justify-center">
+                <Button
+                  variant="link"
+                  className=" flex items-center justify-center text-blue-300"
+                  onClick={() => {
+                    navigator.clipboard.writeText("admin@admin.com");
+                    toast.success("Email copied to clipboard!", {
+                      style: {
+                        background: "#009966",
+                        color: "white",
+                        border: "1px solid #009966",
+                        fontSize: "15px",
+                      },
+                    });
+                  }}
+                >
+                  Email <Paperclip />
+                </Button>
+                <Button
+                  variant="link"
+                  className=" flex items-center justify-center text-blue-300"
+                  onClick={() => {
+                    navigator.clipboard.writeText("admintooth");
+                    toast.success("Password copied to clipboard!", {
+                      style: {
+                        background: "#009966",
+                        color: "white",
+                        border: "1px solid #009966",
+                        fontSize: "15px",
+                      },
+                    });
+                  }}
+                >
+                  Password <Paperclip />
+                </Button>
+              </div>
+              <p className=" text-lg sm:text-2xl font-semibold text-sky-300">
+                Services Management
+              </p>
+              <Carousel className="w-full max-w-4xl my-6">
+                <CarouselContent className="">
+                  <CarouselItem className="flex justify-center ">
+                    <Image
+                      src="/images/projects/toothtoday/admin_service2.png"
+                      width={1920}
+                      height={1920}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+
+                  <CarouselItem className="flex justify-center">
+                    <Image
+                      src="/images/projects/toothtoday/admin_service_edit2.png"
+                      width={1920}
+                      height={600}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="text-sky-600" />
+                <CarouselNext className="text-sky-600  " />
+              </Carousel>
+              <p className="indent-8">
+                Manage dental services with pricing, duration, descriptions,
+                images, price range validation, and detailed information
+              </p>
+            </div>
+            <div className="space-y-2 max-w-4xl text-lg text-center">
+              <p className=" text-lg sm:text-2xl font-semibold text-sky-300">
+                Doctors Management
+              </p>
+              <Carousel className="w-full max-w-4xl my-6">
+                <CarouselContent className="">
+                  <CarouselItem className="flex justify-center ">
+                    <Image
+                      src="/images/projects/toothtoday/admin_doctor1.png"
+                      width={1920}
+                      height={1920}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+
+                  <CarouselItem className="flex justify-center">
+                    <Image
+                      src="/images/projects/toothtoday/admin_doctor_edit.png"
+                      width={1920}
+                      height={600}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="flex justify-center">
+                    <Image
+                      src="/images/projects/toothtoday/admin_doctor_edit2.png"
+                      width={1920}
+                      height={600}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="text-sky-600" />
+                <CarouselNext className="text-sky-600  " />
+              </Carousel>
+              <p className="indent-8">
+                Manage doctor profiles (CRUD), upload profile images with
+                preview, search & filter doctors, configure work schedules, and
+                allow users to book appointments based on available time slots
+              </p>
+            </div>
+            <div className="space-y-2 max-w-4xl text-lg text-center">
+              <p className=" text-lg sm:text-2xl font-semibold text-sky-300">
+                Appointments Management
+              </p>
+              <Carousel className="w-full max-w-4xl my-6">
+                <CarouselContent className="">
+                  <CarouselItem className="flex justify-center ">
+                    <Image
+                      src="/images/projects/toothtoday/admin_queue.png"
+                      width={1920}
+                      height={1920}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+
+                  <CarouselItem className="flex justify-center">
+                    <Image
+                      src="/images/projects/toothtoday/admin_queue_update.png"
+                      width={1920}
+                      height={600}
+                      alt="ToothToday booking interface"
+                      className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+                    />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="text-sky-600" />
+                <CarouselNext className="text-sky-600  " />
+              </Carousel>
+              <p className="">
+                Manage appointments: view and filter by date using calendar,
+                update status, and soft delete
+              </p>
+            </div>
             <div className="flex items-center text-start gap-2 text-sky-500">
               <p className="font-bold text-xl sm:text-3xl">Responsive Design</p>
             </div>
