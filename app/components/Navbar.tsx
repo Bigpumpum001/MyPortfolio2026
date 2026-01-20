@@ -30,16 +30,10 @@ function Navbar() {
       }
     }, 300);
 
-    // Reset to home if we're on the home page
-    // setTimeout(() => {
-    //   if (pathname === "/") {
-    //     setActiveSection("home");
-    //   }
-    // }, 300);
-
     const handleScroll = () => {
       const sections = ["home", "skills", "projects", "contact"];
-      const scrollPosition = window.scrollY + 100;
+      const scrollPosition = window.scrollY + 150;
+      let currentSection = "";
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -49,11 +43,22 @@ function Navbar() {
             scrollPosition >= offsetTop &&
             scrollPosition < offsetTop + offsetHeight
           ) {
-            setActiveSection(section);
+            currentSection = section;
             break;
           }
         }
       }
+
+      // Special handling for when we're at the bottom of the page
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const bottomThreshold = documentHeight - windowHeight - 100;
+      
+      if (window.scrollY >= bottomThreshold) {
+        currentSection = "contact";
+      }
+
+      setActiveSection(currentSection);
     };
 
     // Only add scroll listener if we're on the home page
@@ -93,7 +98,7 @@ function Navbar() {
                   <NavigationMenuLink asChild>
                     <Link
                       href={item.href}
-                      className={`px-5 text-lg md:text-xl font-semibold transition-colors duration-300 hover:bg-slate-900 active:bg-slate-800 focus:bg-slate-800 ${
+                      className={`px-5 text-lg md:text-xl font-semibold transition-colors duration-300 hover:bg-slate-900 active:bg-slate-800 ${
                         activeSection === item.id
                           ? "text-sky-400 hover:text-sky-600 font-extrabold"
                           : "text-slate-100 hover:text-sky-600"

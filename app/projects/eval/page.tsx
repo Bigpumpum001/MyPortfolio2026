@@ -151,7 +151,7 @@ function page() {
                 procedures and views to support various system processes.
               </p>
               <p>
-                - Created complex stored procedures to update main table data
+                - Wrote stored procedures to update main table data
                 upon approval of edit requests.
               </p>
               <p>

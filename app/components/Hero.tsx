@@ -45,7 +45,7 @@ function Hero() {
   return (
     <div
       id="home"
-      className="w-full min-h-screen flex items-center justify-center"
+      className="w-full min-h-screen flex items-center justify-center py-8"
     >
       <div className="space-y-8 px-4 sm:px-6 sm:px-0 lg:space-y-12  my-10 py-4 lg:py-6 md:py-8  flex flex-col lg:flex-row items-center justify-center  z-10 max-w-7xl mx-auto w-full">
         <div className="  flex flex-1 flex-col space-y-4 justify-center px-4 md:px-8">

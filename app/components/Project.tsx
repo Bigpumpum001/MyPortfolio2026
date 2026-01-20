@@ -60,7 +60,7 @@ function Project() {
     <>
       <div
         id="projects"
-        className="w-full p-4 lg:p-6 md:p-8  my-10 z-10  flex items-center justify-center"
+        className="w-full p-4 lg:p-6 md:p-8  py-12 z-10  flex items-center justify-center"
       >
         <div className="mx-auto max-w-7xl w-full">
           <div className="flex items-center justify-center">

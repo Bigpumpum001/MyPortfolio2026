@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Clipboard, Paperclip, Star } from "lucide-react";
+import { Clipboard, ExternalLink, Paperclip, Star } from "lucide-react";
 import { toast } from "sonner";
 import { FaLayerGroup } from "react-icons/fa";
 
@@ -229,6 +229,20 @@ function page() {
               </span>
 
               <div className="flex justify-center">
+                <Button
+                  variant="link"
+                  className=" flex items-center justify-center text-blue-300"
+                >
+                  <a
+                    href="https://tooth-today.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <p className="">Live Demo</p>
+                    <ExternalLink className="" />
+                  </a>{" "}
+                </Button>
                 <Button
                   variant="link"
                   className=" flex items-center justify-center text-blue-300"

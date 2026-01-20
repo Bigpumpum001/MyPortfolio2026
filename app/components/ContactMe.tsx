@@ -72,7 +72,7 @@ function ContactMe() {
 
   return (
     <>
-      <div id="contact" className="w-full lg:p-6 md:p-8 p-4 my-30 z-10">
+      <div id="contact" className="w-full lg:p-6 md:p-8 p-4 py-24 min-h-[70vh] z-10">
         <div className="p-4 md:p-6 lg:p-8 space-y-8 lg:space-y-10 rounded-2xl">
           <div className="flex flex-col items-center justify-center space-y-5">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r bg-clip-text from-sky-500 to-blue-800 text-transparent">

@@ -26,7 +26,7 @@ import AzureOriginal from "react-devicons/azure/original";
 function Skill() {
   return (
     <>
-      <div id="skills" className="w-full lg:p-6 md:p-8 p-4 my-10 z-10">
+      <div id="skills" className="w-full lg:p-6 md:p-8 p-4 py-8 z-10">
         <div className="flex items-center justify-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r bg-clip-text from-sky-500 to-blue-700 text-transparent">
             Skills
